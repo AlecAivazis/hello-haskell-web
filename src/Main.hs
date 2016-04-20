@@ -3,7 +3,9 @@
 module Main where
 
 -- external imports
+import Control.Monad
 import Data.Monoid
+import Data.ByteString as BS
 import Web.Spock.Safe
 import Text.Blaze.Html (Html, toHtml)
 import Text.Blaze.Renderer.Utf8 (renderMarkup)
@@ -20,3 +22,4 @@ main :: IO ()
 main =
     runSpock 8080 $ spockT id $
     do get root $ renderView indexView
+       get "/results" $ renderView resultView

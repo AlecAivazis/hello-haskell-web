@@ -10,6 +10,6 @@ import Text.Blaze.XHtml5 ((!))
 import qualified Text.Blaze.XHtml5 as H
 import qualified Text.Blaze.XHtml5.Attributes as A
 
-resultView :: H.Html -> H.Html
-resultView message =
+resultView :: H.Html
+resultView =
     do H.p "test"

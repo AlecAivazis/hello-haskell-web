@@ -21,9 +21,10 @@ executable you-know-nothing
   -- other-extensions:    
   build-depends:       
                        base >=4.8 && <4.9, 
-                       Spock >=0.7.9,
                        blaze-html >=0.7,
-                       blaze-markup >= 0.7
+                       blaze-markup >= 0.7,
+                       bytestring >= 0.10,
+                       Spock >=0.7.9
   hs-source-dirs:      
                        src
   default-language:    Haskell2010
