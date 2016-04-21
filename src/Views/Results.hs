@@ -11,4 +11,4 @@ import qualified Text.Blaze.XHtml5.Attributes as A
 
 resultView :: Int -> H.Html
 resultView number =
-    do H.p number
+    do H.p (H.toHtml number)
